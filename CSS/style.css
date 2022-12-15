@@ -3,9 +3,21 @@
 
 /* Navbar */
 
-.bg-primary {
-    background-color: red;
+#logoImg {
+    height: 150px;
 }
+
+.customNav {
+    background-color: #b7bba1;
+    justify-content: space-between;
+    color: white;
+}
+
+li:hover {
+    color: #262720;
+}
+
+/* Jumbtotron */
 
 /* Skills bar */
 .container {
