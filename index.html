@@ -6,44 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Nicola Boyle - Bootstrap Portfolio</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
+
   <!-- Logo and navigation bar -->
+
   <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light content custom-nav">
-        <img src="images/NB-logo.png" />
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
+        <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-    <div class="collapse navbar-collapse" id="navbar-dropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="projects">My Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about-me">About Me</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="Contact Me" id="navbarDropdownMenuLink">
-              Contact Me
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="https://uk.linkedin.com/in/nicola-boyle-78672355">LinkedIn</a>
-              <a class="dropdown-item" href="https://github.com/Nikki1162">GitHub</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="email">Email me here</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#my-projects">My Projects <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Contact Me
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://github.com/Nikki1162">GitHub</a>
+                <a class="dropdown-item" href="https://uk.linkedin.com/in/nicola-boyle-78672355">LinkedIn</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#email">Email</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End navigation bar -->
   </header>
 
   <!-- Intro jumbotron -->
+
   <section class="jumbotron"></section>
     <div class="jumbotron">
         <h1 class="display-4">Hi there!</h1>
@@ -57,6 +62,7 @@
   <main class="page-wrapper">
 
     <!-- My project cards -->
+
     <section id="my-projects" class="container-fluid content">
     <div class="card bg-dark text-white" style="width: 30rem;">
         <img src="images/coffee.jpg" class="coffee-img" alt="latte art on a small cup of coffee resting on a table">
@@ -78,13 +84,40 @@
       </div>
     </section>
 
-      <!-- About me -->
-    <section class="about-me" id="about">
+    <!-- Skills section -->
+
+    <section class="skills">
+        <h5 id="skills-header">Skills</h5>
+        <p>HTML</p>
+        <div class="container">
+        <div class="skills html">50%</div>
+        </div>
+        
+        <p>CSS</p>
+        <div class="container">
+        <div class="skills css">25%</div>
+        </div>
+        
+        <p>JavaScript</p>
+        <div class="container">
+        <div class="skills js">5%</div>
+        </div>
+        
+        <p>GitHub</p>
+        <div class="container">
+        <div class="skills git">50%</div>
+        </div>
+    </section>
+    
+
+    <!-- About me -->
+    
+    <section class="about-me" id="about-me">
         <h2 class="about-me-header">About Me</h2>
         <div class="col-12 col-md-4">
             <div id="my-picture">
-              <div class="img_-ontainer">
-                <img class="image" src="images/ProfileImg.png" alt="profile picture">
+              <div class="img-container">
+                <img class="image" src="images/ProfileImg.png" alt="image of Nicola Boyle">
               </div>
             </div>
           </div>
@@ -98,24 +131,61 @@
       </section>
       
 
-    <!-- Contact me -->
-    <section class="page-section-contact" id="contact">
-      <h2>Contact Me:</h2>
-      <a href="https://github.com/Nikki1162">
-        <img src="images/github-icon.png" />Github
-      </a>
-      <a href="https://uk.linkedin.com/in/nicola-boyle-78672355">
-        <img src="images/linkedin-icon.png" />LinkedIn
-      </a>
-      <a href="https://www.instagram.com/nikki.plus.two/?hl=en">
-        <img src="images/instagram-icon.png" />Instagram
-      </a>
-    </section>
+    <!-- Contact me modal -->
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm about-btn">
+            <button class="btn btn-primary" data-target="#exampleModal" data-toggle="modal" type="button">Give me a shout!</button> 
+          </div>
+        </div>
+      </div>
+
+    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
+        <div class="contact-modal" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="exampleModalLabel">Let's chat</h4>
+              <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+            </div>
+
+            <div class="modal-body" id="email">
+              <form>
+                <p>Catch me by phone <a href="tel:+00447530893607">+77 1234 56789</a></p>
+
+                <p>Or drop me an email </p>
+
+                <div class="contact-modal">
+                  <label for="exampleFormControlInput1">Email</label> <input class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" type="email">
+                </div>
+
+
+                <div class="contact-modal">
+                  <label for="exampleFormControlInput1">Phone no.</label> <input class="form-control" id="exampleFormControlInput1" placeholder="+ 77 1234 56789" type="tel">
+                </div>
+
+
+                <div class="contact-modal">
+                  <label for="exampleFormControlTextarea1">Hi Nikki...</label> 
+
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </form>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal" type="button">Cancel</button> <button class="btn btn-primary" type="button">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     
   </main>
 </body>
 
 <!-- Footer -->
+
 <footer class="footer">
     <div>
       <p class="footerContent"><a href="#header">Take me to the top ⬆️</a></p>
