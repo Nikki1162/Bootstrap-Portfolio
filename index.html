@@ -3,189 +3,236 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="CSS/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <body style="background-color: rgba(255, 255, 255, 0);"></body>
     <title>Nicola Boyle - Bootstrap Portfolio</title>
   </head>
 
 <body>
 
-  <!-- Logo and navigation bar -->
+<!-- Nav Bar -->
+  <!-- Image and text -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light content custom-nav">
+    <h1 class="logo" data-text="nameNav">Nikki Boyle</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#about-me">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#project">Projects</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Let's connect!
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="https://github.com/Nikki1162" target="_blank">GitHub</a>
+          <a class="dropdown-item" href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+          <a class="dropdown-item" href="mailto:nicola162@gmail.com">Drop me a line</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
 
-  <header id="header">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light customNav">
-      <a class="navbar-brand" href="#header"><img id="logoImg" src="images/NB-logo.png" alt="Nicola Boyle logo" /></a>
+<!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </p>
+  </div>
 
-      <div>
-        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+<!-- Portfolio Cards -->
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#about-me">About Me</a>
-              </li>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#my-projects">My Projects</a>
-            </li>
+<!-- About Me Section -->
+  <section id="about-me" class="about-me-content">
+    <h3>And a bit about me...</h3>
+  <!-- Profile picture -->
+    <div class="col-12 col-md-4">
+          <div id="my_picture">
+            <div class="img_container">
+              <img class="image" src="images/ProfileImg.png" alt="Photo of Nikki">
+            </div>
+          </div>
+        </div>
+  </section>
 
-            <li class="nav-item dropdown">
-              <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#contact-me" id="navbarDropdown" role="button">Contact Me</a>
+<!-- Skills Section -->
+<section id="skills" class="full-height px-lg-5">
+  <div class="container">
+    <div class="row pb-4">
+      <div class="col-lg-8">
+        <h2 class="text-brand underline">Skills</h2>
+        <h3 class="smaller">Here are some of my transferable skills, as well as a list of skills I am currently learning</h3>
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="skill pb-4">
+          <h3>Web development</h3>
+          <ul class="list-group">
+            <li class="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">Javascript</li>
+            <li class="list-group-item">APIs</li>
+            <li class="list-group-item">Git</li>
           </ul>
         </div>
       </div>
-    </nav>
-  </header>
 
-  <!-- Intro jumbotron -->
-
-    <div class="jumbotron">
-        <div class="row">
-            <div class="col-lg-6">
-            <h1>Hi there! I'm Nikki 👋 it's nice to meet you</h1>
-            <p>This is a portfolio page built using customized Bootstrap components to display recent projects and give you some information about myself.</p>
-            <a class="btn btn-primary btn-lg" href="#my-projects" role="button">My work</a>
-            </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="skill pb-4">
+          <h3>Marketing</h3>
+          <ul class="list-group">
+            <li class="list-group-item">Social Media</li>
+            <li class="list-group-item">Content Creation</li>
+            <li class="list-group-item">Design (Canva, Adobe Suite etc.)</li>
+            <li class="list-group-item">Analysis of ROI</li>
+            <li class="list-group-item">Strategy</li>
+            <li class="list-group-item">Scheduling (Hootesuite etc.)</li>
+          </ul>
         </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="skill pb-4">
+          <h3>Retail</h3>
+          <ul class="list-group">
+            <li class="list-group-item">Organisation</li>
+            <li class="list-group-item">People Management</li>
+            <li class="list-group-item">Analysis of KPIs</li>
+            <li class="list-group-item">Stock Management</li>
+            <li class="list-group-item">Customer Service</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="skill pb-4">
+          <h3>Key Things I'm Currently Learning</h3>
+          <ul class="list-group">
+            <li class="list-group-item">Front-End Web Development</li>
+            <li class="list-group-item">UX & UI</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-  <main class="page-wrapper">
+  </div>
+</section>
 
-    <!-- My project cards -->
-
-    <section id="my-projects" class="container-fluid content">
-    <div class="card bg-dark text-white" style="width: 30rem;">
-        <img src="images/coffee.jpg" class="coffee-img" alt="latte art on a small cup of coffee resting on a table">
-        <div class="card-img-overlay">
-          <h5 class="card-title">Olive & Bean Coffee House</h5>
-        </div>
+<!-- Contact Section -->
+  <!-- Email me -->
+  <div id="email" class="col-12 col-md-3">
+    <h3 class="content-header">Drop me an Email...</h3>
+    <form>
+      <div class="form-group">
+        <input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full name*" required>
       </div>
-      <div class="card bg-dark text-white" style="width: 18rem;">
-        <img src="images/florist.jpg" class="florist-img" alt="an outside view of a florist boutique with lots of bouquets and foliage">
-        <div class="card-body">
-            <h5 class="card-title">Bloom & Blossom Botanicals</h5>
-        </div>
+
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email*" required>
       </div>
-      <div class="card bg-dark text-white" style="width: 18rem;">
-        <img src="images/spa.jpg" class="spa-img" alt="a tranquil room containing a large bath tub in warm, neutral colours">
-        <div class="card-body">
-            <h5 class="card-title">Bloom & Blossom Botanicals</h5>
-        </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Subject*">
       </div>
-    </section>
 
-    <!-- Skills section -->
+      <div class="form-group">
+        <textarea name="" id="" cols="30" rows="10" class="form-control" id="exampleInputPassword1" placeholder="Message*"></textarea>
+      </div>
 
-    <section class="skills">
-        <h5 id="skills-header">Skills</h5>
-        <p>HTML</p>
-        <div class="container">
-        <div class="skills html">50%</div>
-        </div>
-        
-        <p>CSS</p>
-        <div class="container">
-        <div class="skills css">25%</div>
-        </div>
-        
-        <p>JavaScript</p>
-        <div class="container">
-        <div class="skills js">5%</div>
-        </div>
-        
-        <p>GitHub</p>
-        <div class="container">
-        <div class="skills git">50%</div>
-        </div>
-    </section>
-    
+      <button type="submit" class="btn btn-primary custom-btn">Send</button>
+    </form>
 
-    <!-- About me -->
-    
-    <section class="about-me" id="about-me">
-        <h2 class="about-me-header">About Me</h2>
-        <div class="col-12 col-md-4">
-            <div id="my-picture">
-              <div class="img-container">
-                <img class="image" src="images/ProfileImg.png" alt="image of Nicola Boyle">
-              </div>
-            </div>
-          </div>
-        <br>
-        <p>
-          I'm a misplaced northerner living all the way down by the Cotswolds. I work in hospitality alongside freelancing in social media marketing, and have signed up for the course in order to take the next step in my career.
-          <br>
-          <br>
-          When I'm not working, you'll find me out and about with my husband-to-be, our two small sons, and our mad Cockapoo, Gus, exploring the countryside. That, or with my nose in a book!
-        </p>
-      </section>
-      
-
-    <!-- Contact me modal -->
-
-    <div class="container" id="contact-me">
+  <!-- Footer Section -->
+    <div class="hue-background footer-line"></div>
+    <section class="container-fluid" id="footer">
         <div class="row">
-          <div class="col-sm about-btn">
-            <button class="btn btn-primary" data-target="#exampleModal" data-toggle="modal" type="button">Give me a shout!</button> 
-          </div>
+            <div class="footer-col col-sm-12 col-md-6 col-lg-6">
+                <p>All rights reserved © 2023 Nicola Boyle</p>
+            </div>
+            <div class="footer-col col-sm-12 col-md-6 col-lg-6">
+                <p>This portfolio was created by Nicola Boyle</p>
+            </div>
         </div>
-      </div>
-
-    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
-        <div class="contact-modal" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title" id="exampleModalLabel">Let's chat</h4>
-              <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
-            </div>
-
-            <div class="modal-body" id="email">
-              <form>
-                <p>Catch me by phone <a href="tel:+00447530893607">+77 1234 56789</a></p>
-
-                <p>Or drop me an email </p>
-
-                <div class="contact-modal">
-                  <label for="exampleFormControlInput1">Email</label> <input class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" type="email">
-                </div>
+    </section>
+  </div>
 
 
-                <div class="contact-modal">
-                  <label for="exampleFormControlInput1">Phone no.</label> <input class="form-control" id="exampleFormControlInput1" placeholder="+ 77 1234 56789" type="tel">
-                </div>
 
 
-                <div class="contact-modal">
-                  <label for="exampleFormControlTextarea1">Hi Nikki...</label> 
 
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-              </form>
-            </div>
 
-            <div class="modal-footer">
-                <button class="btn btn-secondary" data-dismiss="modal" type="button">Cancel</button> <button class="btn btn-primary" type="button">Submit</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    
-  </main>
+
+
+
+
 </body>
-
-<!-- Footer -->
-
-<footer class="footer">
-    <div>
-      <p class="footerContent"><a href="#header">Take me to the top ⬆️</a></p>
-      <p class="footerMain">All rights reserved | © 2022 Nicola Boyle </p>
-    </div>
-</footer>
-
-</html>
