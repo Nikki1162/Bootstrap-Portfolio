@@ -1,238 +1,179 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link href="<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="CSS/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Nicola Boyle - Bootstrap Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <body style="background-color: rgba(100, 104, 98, 0.5);"></body>
+
+    <title>Nikki Boyle - Bootstrap Portfolio</title>
   </head>
 
-<body>
+  <body>
+    <header id="header">
+    <!-- bootstrap navbar-->
+      <nav class="navbar navbar-expand-lg content navbar-custom">
+        <img class="logo" src="images/NB-logo.png" alt="nav-logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Let's Connect!
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="https://github.com/Nikki1162" target="_blank">GitHub</a>
+              <a class="dropdown-item" href="https://www.linkedin.com/in/nicola-boyle-78672355/" target="_blank">LinkedIn</a>
+              <a class="dropdown-item" href="mailto:nicola162@gmail.com">Drop Me A Line...</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<!-- Nav Bar -->
-  <!-- Image and text -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light content custom-nav">
-    <h1 class="logo" data-text="nameNav">Nikki Boyle</h1>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#about-me">About Me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#project">Projects</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Let's connect!
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="https://github.com/Nikki1162" target="_blank">GitHub</a>
-          <a class="dropdown-item" href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
-          <a class="dropdown-item" href="mailto:nicola162@gmail.com">Drop me a line</a>
-        </div>
-      </li>
-    </ul>
-  </nav>
-</header>
+    <!-- Jumbotron -->
 
-<!-- Jumbotron -->
-  <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </p>
-  </div>
+    <section class="jumbotron">
+      <div class="jumbotron-content">
+        <h2 class="jumbotron-title">Hi there, I'm Nikki 👋</h2>
+        <p class="lead">It's nice to meet you!</p>
+        <p class="jumbo-info">
+          This profile was built using customised Bootstrap elements. It was created to demonstrate my recently acquired skills in CSS, and to display projects I've worked on. Thanks for taking a look!
+        </p>
+        <a class="btn btn-primary btn-lg my-btn" href="#projects" target="_blank" role="button">Recent Projects</a>
+      </div>
+    </section>
 
-<!-- Portfolio Cards -->
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Cras justo odio</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Vestibulum at eros</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
-    </div>
-  </div>
+    <!-- About me -->
 
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Cras justo odio</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Vestibulum at eros</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
-    </div>
-  </div>
+    <section id="about-me" class="container-fluid">
+      <h2 class="about-header">About Me</h2>
 
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="..." alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Cras justo odio</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Vestibulum at eros</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
-    </div>
-  </div>
+      <!-- Profile Picture -->
 
-<!-- About Me Section -->
-  <section id="about-me" class="about-me-content">
-    <h3>And a bit about me...</h3>
-  <!-- Profile picture -->
-    <div class="col-12 col-md-4">
-          <div id="my_picture">
-            <div class="img_container">
-              <img class="image" src="images/ProfileImg.png" alt="Photo of Nikki">
+        <div>
+          <div id="profile_picture">
+            <div class="img-container">
+              <img class="profile-image" src="images/ProfileImg.png" alt="Image of Nikki Boyle">
             </div>
           </div>
         </div>
-  </section>
 
-<!-- Skills Section -->
-<section id="skills" class="full-height px-lg-5">
-  <div class="container">
-    <div class="row pb-4">
-      <div class="col-lg-8">
-        <h2 class="text-brand underline">Skills</h2>
-        <h3 class="smaller">Here are some of my transferable skills, as well as a list of skills I am currently learning</h3>
+      <!-- About Me - content -->
 
-      </div>
-    </div>
-
-    <div class="row">
-
-      <div class="col-sm-6 col-lg-4">
-        <div class="skill pb-4">
-          <h3>Web development</h3>
-          <ul class="list-group">
-            <li class="list-group-item">HTML</li>
-            <li class="list-group-item">CSS</li>
-            <li class="list-group-item">Javascript</li>
-            <li class="list-group-item">APIs</li>
-            <li class="list-group-item">Git</li>
-          </ul>
+        <div class="about-me">
+          <p class="about-content">Hi!<br>
+            My name is Nicola Boyle, but you can call me Nikki.</p>
+            <br>
+          <p class="about-content">
+            I'm a misplaced northerner living all the way down by the Cotswolds. I work in hospitality alongside freelancing in social media marketing, and have signed up for the course in order to take the next step in my career.
+          </p>
+          <br>
+          <p class="about-content">                  
+            When I'm not working, you'll find me out and about with my husband-to-be, our two small sons, and our mad Cockapoo, Gus, exploring the countryside. That, or with my nose in a book!
+          </p>
         </div>
-      </div>
 
-      <div class="col-sm-6 col-lg-4">
-        <div class="skill pb-4">
-          <h3>Marketing</h3>
-          <ul class="list-group">
-            <li class="list-group-item">Social Media</li>
-            <li class="list-group-item">Content Creation</li>
-            <li class="list-group-item">Design (Canva, Adobe Suite etc.)</li>
-            <li class="list-group-item">Analysis of ROI</li>
-            <li class="list-group-item">Strategy</li>
-            <li class="list-group-item">Scheduling (Hootesuite etc.)</li>
-          </ul>
-        </div>
-      </div>
+    <!-- Project Cards -->
 
-      <div class="col-sm-6 col-lg-4">
-        <div class="skill pb-4">
-          <h3>Retail</h3>
-          <ul class="list-group">
-            <li class="list-group-item">Organisation</li>
-            <li class="list-group-item">People Management</li>
-            <li class="list-group-item">Analysis of KPIs</li>
-            <li class="list-group-item">Stock Management</li>
-            <li class="list-group-item">Customer Service</li>
-          </ul>
-        </div>
-      </div>
+    <section id="projects" class="container-fluid content">
+      <h2 class="section-heading">Recent Projects</h2>
+      <section class="row">
 
-      <div class="col-sm-6 col-lg-4">
-        <div class="skill pb-4">
-          <h3>Key Things I'm Currently Learning</h3>
-          <ul class="list-group">
-            <li class="list-group-item">Front-End Web Development</li>
-            <li class="list-group-item">UX & UI</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- Contact Section -->
-  <!-- Email me -->
-  <div id="email" class="col-12 col-md-3">
-    <h3 class="content-header">Drop me an Email...</h3>
-    <form>
-      <div class="form-group">
-        <input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full name*" required>
-      </div>
-
-      <div class="form-group">
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email*" required>
-      </div>
-
-      <div class="form-group">
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Subject*">
-      </div>
-
-      <div class="form-group">
-        <textarea name="" id="" cols="30" rows="10" class="form-control" id="exampleInputPassword1" placeholder="Message*"></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-primary custom-btn">Send</button>
-    </form>
-
-  <!-- Footer Section -->
-    <div class="hue-background footer-line"></div>
-    <section class="container-fluid" id="footer">
-        <div class="row">
-            <div class="footer-col col-sm-12 col-md-6 col-lg-6">
-                <p>All rights reserved © 2023 Nicola Boyle</p>
+      <!-- Card One -->
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card custom-card"> 
+            <a href="https://josephnamihas.github.io/Cocktail-O-Clock/">
+            <img src="images/Cocktail-O-Clock.png" class="img-fluid" alt="..."></a>
+            <div class="card-main">
+              <h5 class="card-title">Cocktail O' Clock</h5>
+              <p class="card-text">A group project whereby we created a cocktail search engine using two APIs to allow users to search for their favourite cocktails, store them and find related cocktails.</p>
+              <a class="btn btn-secondary btn-lg card-btn>" href="https://github.com/Nikki1162/Cocktail-O-Clock" class="card-link">GitHub Repo</a>
             </div>
-            <div class="footer-col col-sm-12 col-md-6 col-lg-6">
-                <p>This portfolio was created by Nicola Boyle</p>
-            </div>
+          </div>
         </div>
+
+      <!-- Card Two --> 
+
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card custom-card">
+            <a href="https://nikki1162.github.io/coding-quiz/">
+            <img src="images/Coding-Quiz.png" class="img-fluid" alt="..."></a>
+            <div class="card-main">
+              <h5 class="card-title">Coding Quiz</h5>
+              <p class="card-text">GitHub repository for my Coding Quiz project</p>
+              <a class="btn btn-secondary btn-lg card-btn>" href="https://github.com/Nikki1162/coding-quiz" class="card-link">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+
+      <!-- Card Three -->
+
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-12">
+          <div class="card custom-card">
+            <a href="https://nikki1162.github.io/Password-Generator/">
+            <img src="images/Random-Password-Generator.png" class="img-fluid" alt="..."></a>
+            <div class="card-main">
+              <h5 class="card-title">Random Password Generator</h5>
+              <p class="card-text">A random password generator created using JavaScript</p>
+              <a class="btn btn-secondary btn-lg card-btn>" href="https://github.com/Nikki1162/Password-Generator" class="card-link">GitHub Repo</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
-  </div>
 
+      <!-- Contact Section -->
+        <div id="email">
+          <h3 class="email-header">Let's Chat!</h3>
+          <form>
+            <div class="email-form">
+              <input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full name*" required>
+            </div>
 
+            <div class="email-form">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email*" required>
+            </div>
 
+            <div class="email-form">
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Subject*">
+            </div>
 
+            <div class="email-form">
+              <textarea name="" id="" cols="30" rows="10" class="form-control" id="exampleInputPassword1" placeholder="Message*"></textarea>
+            </div>
 
+            <button type="submit" class="btn btn-outline-light btn-floating custom-btn email-btn">Send</button>
+          </form>
+        </div>
+      </section>
+    </section>
+    <!-- End about me -->
 
-
-
-
-
-</body>
+    <!-- Footer -->
+    <footer id="footer" class="text-center text-white custom-bg">
+      <div class="container p-4">
+        <section class="mb-4"></section>
+          <a class="btn btn-outline-light btn-floating m-1" href="#header" role="button">
+            <img class="up-icon" src="images/icons8-scroll-up-69.png" alt=""> Take it to the top!
+          </a>
+          <p>All rights reserved | © 2023 Nicola Boyle</p>
+      </div>    
+    </footer>
+  </body>
+</html>
