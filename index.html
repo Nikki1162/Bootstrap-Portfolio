@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <body style="background-color: rgba(100, 104, 98, 0.5);"></body>
+    
 
     <title>Nikki Boyle - Bootstrap Portfolio</title>
   </head>
@@ -33,17 +34,23 @@
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Let's Connect!
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="https://github.com/Nikki1162" target="_blank">GitHub</a>
-              <a class="dropdown-item" href="https://www.linkedin.com/in/nicola-boyle-78672355/" target="_blank">LinkedIn</a>
-              <a class="dropdown-item" href="mailto:nicola162@gmail.com">Drop Me A Line...</a>
+              <a class="dropdown-link" href="https://github.com/Nikki1162" target="_blank">GitHub</a><br>
+              <a class="dropdown-link" href="https://www.linkedin.com/in/nicola-boyle-78672355/" target="_blank">LinkedIn</a><br>
+              <a class="dropdown-link" href="mailto:nicola162@gmail.com">Drop Me A Line...</a>
             </div>
           </li>
         </ul>
       </nav>
+
+      <!-- Script tags to enable dropdown -->
+
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
     </header>
 
     <!-- Jumbotron -->
@@ -87,7 +94,67 @@
           <p class="about-content">                  
             When I'm not working, you'll find me out and about with my husband-to-be, our two small sons, and our mad Cockapoo, Gus, exploring the countryside. That, or with my nose in a book!
           </p>
+        </div><br>
+
+    <!-- Skills Section -->
+
+    <section id="mySkills">
+
+      <div class="container">
+        <div class="skills-section>">
+              <h3 class="skill-card-header">My Skills</h3>
+              <p class="skills-content">This is a list of my transferable skills, and the skills I expect to pick up during the course of this bootcamp.</p>
         </div>
+      </div>
+      <br>
+
+        <div class="row">
+
+          <div class="col-sm-6 col-lg-4">
+            <div class="skill pb-4">
+              <h3 class="skill-h3">Marketing</h3>
+              <ul class="list-group">
+                <li class="list-group-item">Content Creation</li>
+                <li class="list-group-item">Marketing Strategy</li>
+                <li class="list-group-item">Scheduling Software (such as Hootsuite)</li>
+                <li class="list-group-item">Canva</li>
+                <li class="list-group-item">Analytics</li>
+                <li class="list-group-item">ROI</li>
+                <li class="list-group-item">Community Management and Engagment</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4">
+            <div class="skill pb-4">
+              <h3 class="skill-h3">Front End</h3>
+              <ul class="list-group">
+                <li class="list-group-item">HTML</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">APIs</li>
+                <li class="list-group-item">Testing</li>
+                <li class="list-group-item">React</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4">
+            <div class="skill pb-4">
+              <h3 class="skill-h3">Hospitality Management</h3>
+              <ul class="list-group">
+                <li class="list-group-item">Organisation</li>
+                <li class="list-group-item">Shift Scheduling</li>
+                <li class="list-group-item">Payroll</li>
+                <li class="list-group-item">KPI Tracking</li>
+                <li class="list-group-item">People Management</li>
+                <li class="list-group-item">Risk Assessments</li>
+                <li class="list-group-item">Customer Service</li>
+                <li class="list-group-item">Sales and Commercial Awareness</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
     <!-- Project Cards -->
 
