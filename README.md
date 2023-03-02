@@ -37,9 +37,15 @@ After this, I created a CSS stylesheet and began to target each specific compone
 
 The GitHub repository link:
 
-https://github.com/Nikki1162/Password-Generator
+https://github.com/Nikki1162/Bootstrap-Portfolio
 
 The live application:
 
-https://nikki1162.github.io/Password-Generator/
+https://nikki1162.github.io/Bootstrap-Portfolio/
+
+My previous portfolio (without Bootstrap):
+
+https://nikki1162.github.io/My-Profile-Page/
+
+
 
